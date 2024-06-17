@@ -131,3 +131,20 @@ color: #fff;
 .header .search-form label:hover{
     color: var(--main-color);
 }
+
+
+
+.header .cart-itms-container{
+    position: absolute;
+    top:100%; right: 0;
+    height: calc(100vh -9.5rem);
+    width: 35rem;
+    background: #fff;
+    padding: 0 1.5rem;
+}
+
+
+.header .cart-itms-container .card-item{
+    position: relative;
+    margin: 2rem 0;
+}
