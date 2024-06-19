@@ -48,6 +48,21 @@ body{
     background: var(--bg);
 }
 
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: -2rem 1rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
 .header{
     background: var(--bg);
     display: flex;
@@ -136,7 +151,7 @@ color: #fff;
 
 .header .cart-itms-container{
     position: absolute;
-    top:100%; right: 0;
+    top:100%; right: -100%;
     height: calc(100vh -9.5rem);
     width: 35rem;
     background: #fff;
@@ -147,4 +162,44 @@ color: #fff;
 .header .cart-itms-container .card-item{
     position: relative;
     margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
+
+
+.header .cart-itms-container .card-item .fas-times{
+    position: absolute;
+    top: 1rem; right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+
+.header .cart-itms-container .card-item .fas-times:hover{
+    color: var(--main-color);
+}
+
+.header .cart-itms-container .card-item img{
+    height: 7rem;
+}
+
+.header .cart-itms-container .card-item .content h3{
+   font-size: 2rem;
+   color: var(--black);
+   padding-bottom: 5rem;
+}
+
+
+.header .cart-itms-container .card-item .content .price{
+    font-size: 1.5rem;
+    color: var(--main-color);
+
+ }
+
+
+ .header .cart-itms-container .btn{
+    width: 100%;
+    text-align: center;
+ }
