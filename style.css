@@ -290,10 +290,27 @@ home .content p{
 }
 
 
+.menu .box-container{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minimax(30rem, 1fr));
+     gap: 1.5rem;
+}
 
+.menu .box-container .box{
+   padding: 5rem;
+   text-align: center;
+   border:var(--border);
+}
 
+.menu .box-container .box img{
+    height: 10rem;
+}
 
-
+.menu .box-container .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 5rem 0;
+}
 
 
 
