@@ -386,11 +386,29 @@ home .content p{
     font-size: 1.5rem;
 }
     
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.review  .box-container.box{
+    border: var(--black);
+    text-align: center;
+    padding: 3rem 2rem;
+}
     
-    
-    
-    
-    
+.review  .box-container.box p{
+
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color:#ccc;
+    padding: 2rem  0;
+}
+
+.review  .box-container.box{
+
+}
     
     
     
